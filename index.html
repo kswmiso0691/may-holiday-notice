@@ -1107,11 +1107,11 @@
     setTimeout(function(){ petal.remove(); }, duration*1000);
   }
 
-  // 처음에 여러개 한번에
-  for(var i=0;i<8;i++) setTimeout(createPetal, i*300);
+  // 처음에 한꺼번에 많이
+  for(var i=0;i<25;i++) setTimeout(createPetal, i*150);
 
-  // 이후 지속적으로
-  setInterval(createPetal, 800);
+  // 이후 지속적으로 빠르게
+  setInterval(createPetal, 250);
 })();
 </script>
 
